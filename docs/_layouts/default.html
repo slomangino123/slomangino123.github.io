@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>{{ page.title | default: "Our Money Meeting" }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Basic SEO -->
+  <meta name="description"
+    content="Our Money Meeting is a personal finance app that helps couples and families build better money habits together." />
+  <meta name="keywords"
+    content="couples budgeting, shared budget app, finance for couples, money communication, family budgeting app" />
+  <meta name="author" content="Our Money Meeting Team" />
+
+  <!-- Open Graph (Facebook/LinkedIn) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="{{ page.title | default: 'Our Money Meeting' }}" />
+  <meta property="og:description" content="Helping couples and families build better money habits together." />
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+  <meta property="og:image" content="{{ site.url }}/assets/images/og-image.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="{{ page.title | default: 'Our Money Meeting' }}" />
+  <meta name="twitter:description" content="Helping couples and families build better money habits together." />
+  <meta name="twitter:image" content="{{ site.url }}/assets/images/og-image.png" />
+
+  <!-- Favicon -->
+  <!-- Uncomment when favicon is ready -->
+  <!-- <link rel="icon" href="{{ '/assets/images/favicon.ico' | relative_url }}" type="image/x-icon" /> -->
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+
+
+
+
+<body>
+  <div class="site-wrapper">
+    <header>
+      <div class="logo">
+        <a href="/" class="logo-link"><strong>Our Money Meeting</strong></a>
+      </div>
+      <nav>
+        <a href="/">Home</a>
+        <a href="/#features">Features</a>
+        <a href="/#download">Download</a>
+        <a href="/faq">FAQs</a>
+      </nav>
+    </header>
+
+    <main class="content">
+      {{ content }}
+    </main>
+    {% include footer.html %}
+  </div>
+</body>
+
+</html>
