@@ -132,12 +132,13 @@ nav a:hover {
 
 .feature-tiles {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1rem;
 }
 
 /* Tile base styles */
 .feature-tile {
+  position: relative;
   background: white;
   border-radius: 8px;
   padding: 1rem;
@@ -179,6 +180,20 @@ nav a:hover {
   color: #374151;
 }
 
+/* Badge styling */
+.feature-badge {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 0.5rem;
+  background-color: #34d399; /* amber-400 */
+  color: #111;
+  font-size: 0.7rem;
+  font-weight: bold;
+  padding: 0.2rem 0.5rem;
+  border-radius: 999px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  text-transform: uppercase;
+}
 
 /* End Feature */
 
@@ -277,24 +292,6 @@ nav a:hover {
 /* End FAQ */
 
 /* Download */
-.download-cta {
-  padding: 4rem 2rem;
-  background-color: #f0fdf4;
-  text-align: center;
-}
-
-.download-cta h2 {
-  font-size: 2rem;
-  color: #064e3b;
-  margin-bottom: 1rem;
-}
-
-.download-cta p {
-  font-size: 1.1rem;
-  color: #065f46;
-  margin-bottom: 2rem;
-}
-
 .store-buttons {
   display: flex;
   justify-content: center;
